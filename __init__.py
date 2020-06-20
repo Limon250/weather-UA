@@ -1,7 +1,7 @@
 """
 Developed by Limon250
 Date: 20.06.20 - 21.06.20
-Live Weather in Ukraine
+Live Weather in Ukraine with GUI
 Versioj 2.0
 Language: Russian
 For using you need to install pyowm
@@ -141,14 +141,12 @@ temp__6 = w__6.get_temperature('celsius')
 wind__6 = w__6.get_wind()
 hum__6 = w__6.get_humidity()
 
-str1 = "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя"
-
 root = Tk()
 root.title("Weather in Ukraine")
 root.geometry("782x300")
 
-
 bttns = [
+    
             "Винница", "Луцк", "Днепропетровск", "Донецк",
             "Житомир", "Ужгород", "Запорожье", "Ивано-Франковск",
             "Киев", "Кировоград", "Луганск", "Львов",
@@ -187,6 +185,9 @@ def weather(key):
     elif key == "C":
         w_entry.delete(1.0, END)
     elif key == "Винница":
+        w_entry.insert(END, str(w1))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp1))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -196,6 +197,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum1))
         w_entry.insert(END, "\n")
     elif key == "Луцк":
+        w_entry.insert(END, str(w2))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp2))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -205,6 +209,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum2))
         w_entry.insert(END, "\n")
     elif key == "Днепропетровск":
+        w_entry.insert(END, str(w3))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp3))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -214,6 +221,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum3))
         w_entry.insert(END, "\n")
     elif key == "Донецк":
+        w_entry.insert(END, str(w4))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp4))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -223,6 +233,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum4))
         w_entry.insert(END, "\n")
     elif key == "Житомир":
+        w_entry.insert(END, str(w5))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp5))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -232,6 +245,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum5))
         w_entry.insert(END, "\n")
     elif key == "Ужгород":
+        w_entry.insert(END, str(w6))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp6))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -241,6 +257,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum6))
         w_entry.insert(END, "\n")
     elif key == "Запорожье":
+        w_entry.insert(END, str(w7))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp7))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -250,6 +269,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum7))
         w_entry.insert(END, "\n")
     elif key == "Ивано-Франковск":
+        w_entry.insert(END, str(w8))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp8))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -259,6 +281,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum8))
         w_entry.insert(END, "\n")
     elif key == "Киев":
+        w_entry.insert(END, str(w9))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp9))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -268,6 +293,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum9))
         w_entry.insert(END, "\n")
     elif key == "Кировоград":
+        w_entry.insert(END, str(w_1))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_1))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -277,6 +305,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_1))
         w_entry.insert(END, "\n")
     elif key == "Луганск":
+        w_entry.insert(END, str(w_2))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_2))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -286,6 +317,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_2))
         w_entry.insert(END, "\n")
     elif key == "Львов":
+        w_entry.insert(END, str(w_3))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_3))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -295,6 +329,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_3))
         w_entry.insert(END, "\n")
     elif key == "Николаев":
+        w_entry.insert(END, str(w_4))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_4))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -304,6 +341,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_4))
         w_entry.insert(END, "\n")
     elif key == "Одесса":
+        w_entry.insert(END, str(w_5))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_5))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -313,6 +353,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_5))
         w_entry.insert(END, "\n")
     elif key == "Полтава":
+        w_entry.insert(END, str(w_6))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_6))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -322,6 +365,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_6))
         w_entry.insert(END, "\n")
     elif key == "Ровно":
+        w_entry.insert(END, str(w_7))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_7))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -331,6 +377,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_7))
         w_entry.insert(END, "\n")
     elif key == "Сумы":
+        w_entry.insert(END, str(w_8))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_8))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -340,6 +389,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_8))
         w_entry.insert(END, "\n")
     elif key == "Тернополь":
+        w_entry.insert(END, str(w_9))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp_9))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -349,6 +401,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum_9))
         w_entry.insert(END, "\n")
     elif key == "Харьков":
+        w_entry.insert(END, str(w__1))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp__1))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -358,6 +413,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum__1))
         w_entry.insert(END, "\n")
     elif key == "Херсон":
+        w_entry.insert(END, str(w__2))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp__2))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -367,6 +425,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum__2))
         w_entry.insert(END, "\n")
     elif key == "Хмельницкий":
+        w_entry.insert(END, str(w__3))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp__3))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -376,6 +437,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum__3))
         w_entry.insert(END, "\n")
     elif key == "Черкассы":
+        w_entry.insert(END, str(w__4))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp__4))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -385,6 +449,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum__4))
         w_entry.insert(END, "\n")
     elif key == "Чернигов":
+        w_entry.insert(END, str(w__5))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp__5))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -394,6 +461,9 @@ def weather(key):
         w_entry.insert(END, "Кол-во осадков: " + str(hum__5))
         w_entry.insert(END, "\n")
     elif key == "Черновцы":
+        w_entry.insert(END, str(w__6))
+        time.sleep(0.5)
+        w_entry.insert(END, "\n")
         w_entry.insert(END, "Температура: " + str(temp__6))
         time.sleep(0.5)
         w_entry.insert(END, "\n")
@@ -406,7 +476,7 @@ def weather(key):
         w_entry.insert(END, key)
     
 def GH():
-    webbrowser.open("https://github.com/Limon250/calc1.0.git")
+    webbrowser.open("https://github.com/Limon250/weather-UA")
 
 def Insta():
     webbrowser.open("https://www.instagram.com/___.73th.og___/")
@@ -436,4 +506,8 @@ m3 = Menu(m)
 m.add_cascade(label="SoloLearn", menu=m3)
 m3.add_command(label="Open", command=sl)
 
-root.mainloop()
+def main():
+    root.mainloop()
+
+if __name__ == '__main__':
+    main()
